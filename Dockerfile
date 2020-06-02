@@ -1,10 +1,10 @@
 FROM centos:7
 
-LABEL org.opencontainers.image.source="https://github.com/giovtorres/slurm-docker-cluster" \
+LABEL org.opencontainers.image.source="https://github.com/ycrc/slurm-docker-cluster" \
       org.opencontainers.image.title="slurm-docker-cluster" \
       org.opencontainers.image.description="Slurm Docker cluster on CentOS 7" \
       org.label-schema.docker.cmd="docker-compose up -d" \
-      maintainer="Giovanni Torres"
+      maintainer="Yale Center for Research Computing"
 
 ARG SLURM_TAG=slurm-19-05-1-2
 ARG GOSU_VERSION=1.11
