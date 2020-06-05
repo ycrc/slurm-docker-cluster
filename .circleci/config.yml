@@ -1,0 +1,25 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - python/load-cache
+      - python/install-deps
+      - python/save-cache
+      - run: 
+          command: mkdir test-reports
+      - run:
+          name: Test Help 
+          command: ./seff-array.py -h
+      - store_test_results:
+          path: test-reports/
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
