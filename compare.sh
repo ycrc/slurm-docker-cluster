@@ -8,4 +8,4 @@ diff seff_output.txt expected.txt
 # echo "expected"
 # cat expected.txt
 
-exit 0
+# exit 0
