@@ -16,6 +16,6 @@ def main(jobid):
 	sys.stdout.write(file.read())
 
 if __name__ == '__main__':
-	jobid = sys.argv[1]
+	jobid = sys.argv[4]
 	main(jobid)
 	
