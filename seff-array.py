@@ -272,7 +272,7 @@ def histogram(
             print("The requested runtime was %s." % req_time)
 
     elif form == 0:
-        half_width = (term_columns - 18) // 2
+        half_width = int((term_columns - 18) // 2)
         print("=" * half_width + " Max Memory Usage " + "=" * half_width)
         print(
             "# NumSamples = %d; Min = %s; Max = %s"
