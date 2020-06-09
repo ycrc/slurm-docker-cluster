@@ -13,8 +13,8 @@ jobs:
       - python/save-cache
       - run: 
           name: "Add fake sacct to env"
-          command: echo 'export sacc="./sacct"' >> $BASH_ENV
-          command: source ~/.bashrc
+          command: echo 'export sacc="./sacct"' >> $BASH_ENV \
+                   source ~/.bashrc
       - run: 
           command: mkdir test-reports
       - run:
