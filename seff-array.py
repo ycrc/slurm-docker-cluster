@@ -469,7 +469,7 @@ def main(arrayID, m, t, c, v):
         result = file.read()
     else:
         query = (
-            "./sacct.py -n -P -j %s --format=JobID,JobName,MaxRSS,Elapsed,"
+            "sacct -n -P -j %s --format=JobID,JobName,MaxRSS,Elapsed,"
             "ReqMem,ReqCPUS,Timelimit,State,TotalCPU,User,Group,Cluster,ExitCode"
             % arrayID
         )
