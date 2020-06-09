@@ -213,7 +213,7 @@ def histogram(
 
     # 5 so that the width of the histogram is somewhat reasonable
     if (term_columns - fixed < 5):      # if window size too small or does not exist
-        term_columns = 100 * 0.8        # set to default size of 100
+        term_columns = int(100 * 0.8)        # set to default size of 100
 
     if max(bucket_counts) > (term_columns - fixed):
         bucket_scale = int(max(bucket_counts) / (term_columns - fixed)) + 1
