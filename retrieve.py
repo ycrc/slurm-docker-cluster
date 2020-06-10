@@ -11,6 +11,7 @@ def main(jobid):
 	elif (jobid == "57340029"): file = open("tests/output/array_running.out")
 	elif (jobid == "57340052"): file = open("tests/output/array_completed.out")
 	elif (jobid == "57169427"): file = open("tests/output/array_mixed.out")
+	elif (jobid == "fail")    : file = open("tests/output/sacct_fail.out")
 	else: 						file = open("tests/output/nonexistent.out")
 
 	sys.stdout.write(file.read())

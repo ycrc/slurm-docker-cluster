@@ -43,6 +43,9 @@ jobs:
       - run: 
           name: Single Job, Invalid
           command: ./compare.sh 0
+      - run:
+          name: Sacct Failure
+          command: ./compare.sh fail
       - store_test_results:
           path: test-reports/
 
