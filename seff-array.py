@@ -477,8 +477,7 @@ def main(arrayID, m, t, c, v):
         try: 
             result = subprocess.check_output([query], shell=True)
         except subprocess.CalledProcessError:
-            print("Error: sacct failed to respond, please try again later.")
-            sys.exit(1)
+            sys.exit("Error: sacct failed to respond, please try again later.")
 
     if sys.version_info[0] >= 3:
         result = str(result, "utf-8")

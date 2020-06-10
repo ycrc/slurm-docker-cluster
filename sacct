@@ -17,5 +17,7 @@ def main(jobid):
 
 if __name__ == '__main__':
 	jobid = sys.argv[4]
+	if jobid == "fail":
+		sys.exit(1)
 	main(jobid)
 	
